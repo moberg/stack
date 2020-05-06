@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${name}
+  labels:
+    app: ${name}
+spec:
+  selector:
+    app: ${name}
+  ports:
+  - port: ${port}
+    targetPort: ${targetPort}
+    protocol: TCP
+    name: port-main
+  =[extraPorts,
+  - port: $
+    targetPort: $
+    protocol: TCP
+    name: port-$
+  ]
+  type: ClusterIP

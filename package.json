@@ -1,0 +1,48 @@
+bitbucket{
+  "name": "stack",
+  "version": "0.8.0",
+  "description": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "await-sleep": "0.0.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "command-exists": "^1.2.7",
+    "connect": "^3.6.6",
+    "consul": "^0.31.0",
+    "cookie-parser": "^1.4.3",
+    "dockerode": "^2.5.5",
+    "graphviz": "0.0.8",
+    "ioredis": "^3.2.2",
+    "is-running": "^2.1.0",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.5",
+    "mkdirp": "^0.5.1",
+    "monocle-api": "^1.1.51",
+    "opn": "^5.3.0",
+    "rimraf": "^2.6.2",
+    "serve-static": "^1.13.2",
+    "shelljs": "^0.8.2",
+    "shorthash": "0.0.2",
+    "signal-exit": "^3.0.2",
+    "strformat": "0.0.7",
+    "tmp": "0.0.33",
+    "url-join": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsdoc": "^15.9.1",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive --timeout 60000",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "author": "Peter Moberg <pmoberg@themeetgroup.com>",
+  "bin": {
+    "stack": "lib/stack.js"
+  }
+}

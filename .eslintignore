@@ -1,0 +1,4 @@
+apps/*
+out/*
+node_modules/*
+data/*
